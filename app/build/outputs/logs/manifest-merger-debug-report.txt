@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-31:12
-INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-31:12
-INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-31:12
-INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-31:12
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-36:12
 MERGED from [androidx.databinding:viewbinding:8.2.1] /Users/duykhanhnguyen/.gradle/caches/transforms-3/89fe61cbd69f02d418bd6dd56627b80b/transformed/jetified-viewbinding-8.2.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/84c92507bee9bd439f211ef532cb7f53/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-3/5efd77fab88c10a02eca9eb5051994c3/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -63,8 +63,8 @@ MERGED from [androidx.print:print:1.0.0] /Users/duykhanhnguyen/.gradle/caches/tr
 	xmlns:android
 		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:11-69
 application
-ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:4:5-29:19
-INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:4:5-29:19
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:4:5-34:19
+INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:4:5-34:19
 MERGED from [com.google.android.material:material:1.12.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/84c92507bee9bd439f211ef532cb7f53/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/84c92507bee9bd439f211ef532cb7f53/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/duykhanhnguyen/.gradle/caches/transforms-3/980df3178d7019cc2e2f696a8cefea1d/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
@@ -109,18 +109,24 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:15:17-77
 	android:name
 		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:15:27-74
-activity#com.example.expensetracker.ui.AddExpenseActivity
+activity#com.example.expensetracker.ui.AddIncomeActivity
 ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:21:13-50
-activity#com.example.expensetracker.ui.StatisticsActivity
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:21:13-49
+activity#com.example.expensetracker.ui.AddExpenseActivity
 ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:25:9-27:40
 	android:exported
 		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:27:13-37
 	android:name
 		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:26:13-50
+activity#com.example.expensetracker.ui.StatisticsActivity
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:30:9-32:40
+	android:exported
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:31:13-50
 uses-sdk
 INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml

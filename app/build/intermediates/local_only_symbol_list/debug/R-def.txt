@@ -2,12 +2,14 @@ R_DEF: Internal format may change without notice
 local
 array category_list
 array source_list
+drawable border_box
 drawable button_add_expense
 drawable button_add_income
 drawable button_statistics
 id btnAddExpense
 id btnAddIncome
 id btnStatistics
+id btn_delete
 id btn_save_expense
 id btn_save_income
 id edit_expense_amount
@@ -15,6 +17,7 @@ id edit_income_amount
 id nav_add_expense
 id nav_home
 id nav_statistics
+id recycler_expense
 id spinner_category
 id spinner_source
 id statisticsLayout
@@ -22,10 +25,16 @@ id textBalance
 id textTotalExpense
 id textTotalIncome
 id textViewTitle
+id txt_amount
+id txt_category
+id txt_timestamp
+id txt_total_expense
 layout activity_add_expense
 layout activity_add_income
 layout activity_main
 layout activity_statistics
+layout item_expense
+layout item_expense_header
 menu drawer_menu
 string app_name
 style Theme.AppCompat.Light.NoActionBar

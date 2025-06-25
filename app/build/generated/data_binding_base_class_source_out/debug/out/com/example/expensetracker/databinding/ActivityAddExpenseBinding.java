@@ -8,8 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.expensetracker.R;
@@ -28,14 +30,23 @@ public final class ActivityAddExpenseBinding implements ViewBinding {
   public final EditText editExpenseAmount;
 
   @NonNull
+  public final RecyclerView recyclerExpense;
+
+  @NonNull
   public final Spinner spinnerCategory;
 
+  @NonNull
+  public final TextView txtTotalExpense;
+
   private ActivityAddExpenseBinding(@NonNull LinearLayout rootView, @NonNull Button btnSaveExpense,
-      @NonNull EditText editExpenseAmount, @NonNull Spinner spinnerCategory) {
+      @NonNull EditText editExpenseAmount, @NonNull RecyclerView recyclerExpense,
+      @NonNull Spinner spinnerCategory, @NonNull TextView txtTotalExpense) {
     this.rootView = rootView;
     this.btnSaveExpense = btnSaveExpense;
     this.editExpenseAmount = editExpenseAmount;
+    this.recyclerExpense = recyclerExpense;
     this.spinnerCategory = spinnerCategory;
+    this.txtTotalExpense = txtTotalExpense;
   }
 
   @Override
@@ -77,14 +88,26 @@ public final class ActivityAddExpenseBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.recycler_expense;
+      RecyclerView recyclerExpense = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerExpense == null) {
+        break missingId;
+      }
+
       id = R.id.spinner_category;
       Spinner spinnerCategory = ViewBindings.findChildViewById(rootView, id);
       if (spinnerCategory == null) {
         break missingId;
       }
 
+      id = R.id.txt_total_expense;
+      TextView txtTotalExpense = ViewBindings.findChildViewById(rootView, id);
+      if (txtTotalExpense == null) {
+        break missingId;
+      }
+
       return new ActivityAddExpenseBinding((LinearLayout) rootView, btnSaveExpense,
-          editExpenseAmount, spinnerCategory);
+          editExpenseAmount, recyclerExpense, spinnerCategory, txtTotalExpense);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

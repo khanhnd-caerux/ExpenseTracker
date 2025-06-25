@@ -2899,6 +2899,7 @@ int drawable abc_textfield_search_material 0x7f080075
 int drawable abc_vector_test 0x7f080076
 int drawable avd_hide_password 0x7f080077
 int drawable avd_show_password 0x7f080078
+int drawable border_box 0x7f0800e7
 int drawable btn_checkbox_checked_mtrl 0x7f080079
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f08007a
 int drawable btn_checkbox_unchecked_mtrl 0x7f08007b
@@ -3100,6 +3101,7 @@ int id bounce 0x7f090057
 int id btnAddExpense 0x7f090058
 int id btnAddIncome 0x7f0901d3
 int id btnStatistics 0x7f090059
+int id btn_delete 0x7f0901d6
 int id btn_save_expense 0x7f09005a
 int id btn_save_income 0x7f0901d4
 int id buttonPanel 0x7f09005b
@@ -3343,6 +3345,7 @@ int id progress_horizontal 0x7f090148
 int id radio 0x7f090149
 int id ratio 0x7f09014a
 int id rectangles 0x7f09014b
+int id recycler_expense 0x7f0901d7
 int id report_drawn 0x7f09014c
 int id reverseSawtooth 0x7f09014d
 int id right 0x7f09014e
@@ -3462,6 +3465,10 @@ int id transition_position 0x7f0901be
 int id transition_scene_layoutid_cache 0x7f0901bf
 int id transition_transform 0x7f0901c0
 int id triangle 0x7f0901c1
+int id txt_amount 0x7f0901d8
+int id txt_category 0x7f0901d9
+int id txt_timestamp 0x7f0901db
+int id txt_total_expense 0x7f0901da
 int id unchecked 0x7f0901c2
 int id uniform 0x7f0901c3
 int id unlabeled 0x7f0901c4
@@ -3615,6 +3622,8 @@ int layout design_text_input_end_icon 0x7f0c002e
 int layout design_text_input_start_icon 0x7f0c002f
 int layout ime_base_split_test_activity 0x7f0c0030
 int layout ime_secondary_split_test_activity 0x7f0c0031
+int layout item_expense 0x7f0c006f
+int layout item_expense_header 0x7f0c0070
 int layout m3_alert_dialog 0x7f0c0032
 int layout m3_alert_dialog_actions 0x7f0c0033
 int layout m3_alert_dialog_title 0x7f0c0034
