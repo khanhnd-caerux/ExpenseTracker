@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Quản Lý Chi Tiêu</string>
+    <string-array name="category_list">
+        <item>Ăn uống</item>
+        <item>Giải trí</item>
+        <item>Đi lại</item>
+        <item>Khác</item>
+    </string-array>
+    <string-array name="source_list">
+        <item>Lương tháng</item>
+        <item>Thu nhập thụ động</item>
+        <item>Khác</item>
+    </string-array>
+</resources>

@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.expensetracker">
+
+    <application
+        android:allowBackup="true"
+        android:label="Quản Lý Chi Tiêu"
+        android:supportsRtl="true">
+
+        <!-- Màn hình chính -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"> <!-- PHẢI có nếu có intent-filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Màn hình thêm doanh thu -->
+        <activity
+            android:name=".ui.AddIncomeActivity"
+            android:exported="false" />
+
+        <!-- Màn hình thêm chi tiêu -->
+        <activity
+            android:name=".ui.AddExpenseActivity"
+            android:exported="false" />
+
+        <!-- Màn hình xem thống kê -->
+        <activity
+            android:name=".ui.StatisticsActivity"
+            android:exported="false" />
+        
+    </application>
+
+</manifest>

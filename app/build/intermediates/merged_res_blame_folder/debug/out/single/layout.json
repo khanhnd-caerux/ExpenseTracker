@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/duykhanhnguyen/.gradle/daemon/8.2/com.example.expensetracker.app-mergeDebugResources-37:/layout/activity_main.xml",
+        "source": "/Users/duykhanhnguyen/.gradle/daemon/8.2/com.example.expensetracker.app-main-40:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/duykhanhnguyen/.gradle/daemon/8.2/com.example.expensetracker.app-mergeDebugResources-37:/layout/activity_statistics.xml",
+        "source": "/Users/duykhanhnguyen/.gradle/daemon/8.2/com.example.expensetracker.app-main-40:/layout/activity_statistics.xml"
+    },
+    {
+        "merged": "com.example.expensetracker.app-mergeDebugResources-37:/layout/activity_add_income.xml",
+        "source": "com.example.expensetracker.app-main-40:/layout/activity_add_income.xml"
+    },
+    {
+        "merged": "/Users/duykhanhnguyen/.gradle/daemon/8.2/com.example.expensetracker.app-mergeDebugResources-37:/layout/activity_add_income.xml",
+        "source": "/Users/duykhanhnguyen/.gradle/daemon/8.2/com.example.expensetracker.app-main-40:/layout/activity_add_income.xml"
+    },
+    {
+        "merged": "/Users/duykhanhnguyen/.gradle/daemon/8.2/com.example.expensetracker.app-mergeDebugResources-37:/layout/activity_add_expense.xml",
+        "source": "/Users/duykhanhnguyen/.gradle/daemon/8.2/com.example.expensetracker.app-main-40:/layout/activity_add_expense.xml"
+    }
+]
