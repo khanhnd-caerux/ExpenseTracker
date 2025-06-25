@@ -8,8 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.expensetracker.R;
@@ -28,14 +30,23 @@ public final class ActivityAddIncomeBinding implements ViewBinding {
   public final EditText editIncomeAmount;
 
   @NonNull
+  public final RecyclerView recyclerIncome;
+
+  @NonNull
   public final Spinner spinnerSource;
 
+  @NonNull
+  public final TextView txtTotalIncome;
+
   private ActivityAddIncomeBinding(@NonNull LinearLayout rootView, @NonNull Button btnSaveIncome,
-      @NonNull EditText editIncomeAmount, @NonNull Spinner spinnerSource) {
+      @NonNull EditText editIncomeAmount, @NonNull RecyclerView recyclerIncome,
+      @NonNull Spinner spinnerSource, @NonNull TextView txtTotalIncome) {
     this.rootView = rootView;
     this.btnSaveIncome = btnSaveIncome;
     this.editIncomeAmount = editIncomeAmount;
+    this.recyclerIncome = recyclerIncome;
     this.spinnerSource = spinnerSource;
+    this.txtTotalIncome = txtTotalIncome;
   }
 
   @Override
@@ -77,14 +88,26 @@ public final class ActivityAddIncomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.recycler_income;
+      RecyclerView recyclerIncome = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerIncome == null) {
+        break missingId;
+      }
+
       id = R.id.spinner_source;
       Spinner spinnerSource = ViewBindings.findChildViewById(rootView, id);
       if (spinnerSource == null) {
         break missingId;
       }
 
+      id = R.id.txt_total_income;
+      TextView txtTotalIncome = ViewBindings.findChildViewById(rootView, id);
+      if (txtTotalIncome == null) {
+        break missingId;
+      }
+
       return new ActivityAddIncomeBinding((LinearLayout) rootView, btnSaveIncome, editIncomeAmount,
-          spinnerSource);
+          recyclerIncome, spinnerSource, txtTotalIncome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

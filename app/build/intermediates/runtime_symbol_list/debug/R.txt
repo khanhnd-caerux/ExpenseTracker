@@ -3346,6 +3346,7 @@ int id radio 0x7f090149
 int id ratio 0x7f09014a
 int id rectangles 0x7f09014b
 int id recycler_expense 0x7f0901d7
+int id recycler_income 0x7f0901dd
 int id report_drawn 0x7f09014c
 int id reverseSawtooth 0x7f09014d
 int id right 0x7f09014e
@@ -3467,8 +3468,10 @@ int id transition_transform 0x7f0901c0
 int id triangle 0x7f0901c1
 int id txt_amount 0x7f0901d8
 int id txt_category 0x7f0901d9
+int id txt_source 0x7f0901dc
 int id txt_timestamp 0x7f0901db
 int id txt_total_expense 0x7f0901da
+int id txt_total_income 0x7f0901de
 int id unchecked 0x7f0901c2
 int id uniform 0x7f0901c3
 int id unlabeled 0x7f0901c4
@@ -3624,6 +3627,8 @@ int layout ime_base_split_test_activity 0x7f0c0030
 int layout ime_secondary_split_test_activity 0x7f0c0031
 int layout item_expense 0x7f0c006f
 int layout item_expense_header 0x7f0c0070
+int layout item_income 0x7f0c0071
+int layout item_income_header 0x7f0c0072
 int layout m3_alert_dialog 0x7f0c0032
 int layout m3_alert_dialog_actions 0x7f0c0033
 int layout m3_alert_dialog_title 0x7f0c0034

@@ -3347,6 +3347,7 @@ id radio
 id ratio
 id rectangles
 id recycler_expense
+id recycler_income
 id report_drawn
 id reverseSawtooth
 id right
@@ -3468,8 +3469,10 @@ id transition_transform
 id triangle
 id txt_amount
 id txt_category
+id txt_source
 id txt_timestamp
 id txt_total_expense
+id txt_total_income
 id unchecked
 id uniform
 id unlabeled
@@ -3625,6 +3628,8 @@ layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_expense
 layout item_expense_header
+layout item_income
+layout item_income_header
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

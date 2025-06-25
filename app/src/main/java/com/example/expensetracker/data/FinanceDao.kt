@@ -5,16 +5,23 @@ import androidx.room.*
 
 @Dao
 interface FinanceDao {
+    // Income's functions
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertIncome(income: Income)
-
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insertExpense(expense: Expense)
 
     @Query("SELECT * FROM income_table")
     fun getAllIncomes(): LiveData<List<Income>>
 
+    @Query("SELECT * FROM income_table")
+    suspend fun getAllIncomesList(): List<Income>
+
+    @Delete
+    suspend fun deleteIncome(income: Income)
+
     // Expense's functions
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    suspend fun insertExpense(expense: Expense)
+
     @Query("SELECT * FROM expense_table")
     fun getAllExpenses(): LiveData<List<Expense>>
 

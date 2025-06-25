@@ -37,6 +37,8 @@ public final class FinanceDao_Impl implements FinanceDao {
 
   private final EntityInsertionAdapter<Expense> __insertionAdapterOfExpense;
 
+  private final EntityDeletionOrUpdateAdapter<Income> __deletionAdapterOfIncome;
+
   private final EntityDeletionOrUpdateAdapter<Expense> __deletionAdapterOfExpense;
 
   public FinanceDao_Impl(@NonNull final RoomDatabase __db) {
@@ -81,6 +83,19 @@ public final class FinanceDao_Impl implements FinanceDao {
         statement.bindLong(4, entity.getDate());
       }
     };
+    this.__deletionAdapterOfIncome = new EntityDeletionOrUpdateAdapter<Income>(__db) {
+      @Override
+      @NonNull
+      protected String createQuery() {
+        return "DELETE FROM `income_table` WHERE `id` = ?";
+      }
+
+      @Override
+      protected void bind(@NonNull final SupportSQLiteStatement statement,
+          @NonNull final Income entity) {
+        statement.bindLong(1, entity.getId());
+      }
+    };
     this.__deletionAdapterOfExpense = new EntityDeletionOrUpdateAdapter<Expense>(__db) {
       @Override
       @NonNull
@@ -123,6 +138,24 @@ public final class FinanceDao_Impl implements FinanceDao {
         __db.beginTransaction();
         try {
           __insertionAdapterOfExpense.insert(expense);
+          __db.setTransactionSuccessful();
+          return Unit.INSTANCE;
+        } finally {
+          __db.endTransaction();
+        }
+      }
+    }, $completion);
+  }
+
+  @Override
+  public Object deleteIncome(final Income income, final Continuation<? super Unit> $completion) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      @NonNull
+      public Unit call() throws Exception {
+        __db.beginTransaction();
+        try {
+          __deletionAdapterOfIncome.handle(income);
           __db.setTransactionSuccessful();
           return Unit.INSTANCE;
         } finally {
@@ -193,6 +226,48 @@ public final class FinanceDao_Impl implements FinanceDao {
         _statement.release();
       }
     });
+  }
+
+  @Override
+  public Object getAllIncomesList(final Continuation<? super List<Income>> $completion) {
+    final String _sql = "SELECT * FROM income_table";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
+    return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<List<Income>>() {
+      @Override
+      @NonNull
+      public List<Income> call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+          final int _cursorIndexOfSource = CursorUtil.getColumnIndexOrThrow(_cursor, "source");
+          final int _cursorIndexOfAmount = CursorUtil.getColumnIndexOrThrow(_cursor, "amount");
+          final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
+          final List<Income> _result = new ArrayList<Income>(_cursor.getCount());
+          while (_cursor.moveToNext()) {
+            final Income _item;
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final String _tmpSource;
+            if (_cursor.isNull(_cursorIndexOfSource)) {
+              _tmpSource = null;
+            } else {
+              _tmpSource = _cursor.getString(_cursorIndexOfSource);
+            }
+            final double _tmpAmount;
+            _tmpAmount = _cursor.getDouble(_cursorIndexOfAmount);
+            final long _tmpDate;
+            _tmpDate = _cursor.getLong(_cursorIndexOfDate);
+            _item = new Income(_tmpId,_tmpSource,_tmpAmount,_tmpDate);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+          _statement.release();
+        }
+      }
+    }, $completion);
   }
 
   @Override
