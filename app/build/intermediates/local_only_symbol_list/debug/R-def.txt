@@ -9,6 +9,7 @@ drawable button_statistics
 id btnAddExpense
 id btnAddIncome
 id btnStatistics
+id btn_back
 id btn_delete
 id btn_save_expense
 id btn_save_income

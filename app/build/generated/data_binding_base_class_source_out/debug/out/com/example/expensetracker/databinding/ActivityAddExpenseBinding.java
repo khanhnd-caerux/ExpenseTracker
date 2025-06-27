@@ -24,6 +24,9 @@ public final class ActivityAddExpenseBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final Button btnBack;
+
+  @NonNull
   public final Button btnSaveExpense;
 
   @NonNull
@@ -38,10 +41,12 @@ public final class ActivityAddExpenseBinding implements ViewBinding {
   @NonNull
   public final TextView txtTotalExpense;
 
-  private ActivityAddExpenseBinding(@NonNull LinearLayout rootView, @NonNull Button btnSaveExpense,
-      @NonNull EditText editExpenseAmount, @NonNull RecyclerView recyclerExpense,
-      @NonNull Spinner spinnerCategory, @NonNull TextView txtTotalExpense) {
+  private ActivityAddExpenseBinding(@NonNull LinearLayout rootView, @NonNull Button btnBack,
+      @NonNull Button btnSaveExpense, @NonNull EditText editExpenseAmount,
+      @NonNull RecyclerView recyclerExpense, @NonNull Spinner spinnerCategory,
+      @NonNull TextView txtTotalExpense) {
     this.rootView = rootView;
+    this.btnBack = btnBack;
     this.btnSaveExpense = btnSaveExpense;
     this.editExpenseAmount = editExpenseAmount;
     this.recyclerExpense = recyclerExpense;
@@ -76,6 +81,12 @@ public final class ActivityAddExpenseBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_back;
+      Button btnBack = ViewBindings.findChildViewById(rootView, id);
+      if (btnBack == null) {
+        break missingId;
+      }
+
       id = R.id.btn_save_expense;
       Button btnSaveExpense = ViewBindings.findChildViewById(rootView, id);
       if (btnSaveExpense == null) {
@@ -106,7 +117,7 @@ public final class ActivityAddExpenseBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAddExpenseBinding((LinearLayout) rootView, btnSaveExpense,
+      return new ActivityAddExpenseBinding((LinearLayout) rootView, btnBack, btnSaveExpense,
           editExpenseAmount, recyclerExpense, spinnerCategory, txtTotalExpense);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -26,6 +26,7 @@ class AddIncomeActivity : ComponentActivity() {
         val spinnerSource = findViewById<Spinner>(R.id.spinner_source)
         val btnSave = findViewById<Button>(R.id.btn_save_income)
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_income)
+        val btnBack = findViewById<Button>(R.id.btn_back) // <- thêm nút back
 
         val db = AppDatabase.getDatabase(this)
         val incomeDao = db.financeDao()
@@ -59,6 +60,11 @@ class AddIncomeActivity : ComponentActivity() {
             } else {
                 Toast.makeText(this, "Vui lòng nhập số tiền hợp lệ", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        // Xử lý nút quay lại MainActivity
+        btnBack.setOnClickListener {
+            finish() // quay về MainActivity
         }
     }
 

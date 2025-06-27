@@ -14,7 +14,6 @@ import java.text.NumberFormat
 import java.util.*
 import com.example.expensetracker.data.FinanceDao
 
-
 class AddExpenseActivity : ComponentActivity() {
     private lateinit var adapter: ExpenseAdapter
 
@@ -22,14 +21,18 @@ class AddExpenseActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_expense)
 
+        // Ánh xạ view
         val editAmount = findViewById<EditText>(R.id.edit_expense_amount)
         val spinnerCategory = findViewById<Spinner>(R.id.spinner_category)
         val btnSave = findViewById<Button>(R.id.btn_save_expense)
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_expense)
+        val btnBack = findViewById<Button>(R.id.btn_back) // <- thêm nút back
 
+        // Khởi tạo DB và DAO
         val db = AppDatabase.getDatabase(this)
         val expenseDao = db.financeDao()
 
+        // Adapter và danh sách chi tiêu
         adapter = ExpenseAdapter(mutableListOf()) { expenseToDelete ->
             lifecycleScope.launch {
                 expenseDao.deleteExpense(expenseToDelete)
@@ -40,8 +43,10 @@ class AddExpenseActivity : ComponentActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
 
+        // Load dữ liệu ban đầu
         loadExpenses(expenseDao)
 
+        // Lưu chi tiêu mới
         btnSave.setOnClickListener {
             val amountText = editAmount.text.toString()
             val amount = amountText.toDoubleOrNull()
@@ -59,6 +64,11 @@ class AddExpenseActivity : ComponentActivity() {
             } else {
                 Toast.makeText(this, "Vui lòng nhập số tiền hợp lệ", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        // Xử lý nút quay lại MainActivity
+        btnBack.setOnClickListener {
+            finish() // đóng AddExpenseActivity, quay về MainActivity
         }
     }
 
