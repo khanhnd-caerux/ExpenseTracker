@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.expensetracker.R;
+import com.github.mikephil.charting.charts.BarChart;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -26,14 +27,23 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button btnAddIncome;
 
   @NonNull
+  public final Button btnLimit;
+
+  @NonNull
   public final Button btnStatistics;
 
+  @NonNull
+  public final BarChart chartBar;
+
   private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull Button btnAddExpense,
-      @NonNull Button btnAddIncome, @NonNull Button btnStatistics) {
+      @NonNull Button btnAddIncome, @NonNull Button btnLimit, @NonNull Button btnStatistics,
+      @NonNull BarChart chartBar) {
     this.rootView = rootView;
     this.btnAddExpense = btnAddExpense;
     this.btnAddIncome = btnAddIncome;
+    this.btnLimit = btnLimit;
     this.btnStatistics = btnStatistics;
+    this.chartBar = chartBar;
   }
 
   @Override
@@ -75,14 +85,26 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnLimit;
+      Button btnLimit = ViewBindings.findChildViewById(rootView, id);
+      if (btnLimit == null) {
+        break missingId;
+      }
+
       id = R.id.btnStatistics;
       Button btnStatistics = ViewBindings.findChildViewById(rootView, id);
       if (btnStatistics == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayout) rootView, btnAddExpense, btnAddIncome,
-          btnStatistics);
+      id = R.id.chart_bar;
+      BarChart chartBar = ViewBindings.findChildViewById(rootView, id);
+      if (chartBar == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((LinearLayout) rootView, btnAddExpense, btnAddIncome, btnLimit,
+          btnStatistics, chartBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

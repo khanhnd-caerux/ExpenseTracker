@@ -2911,6 +2911,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_add_expense
 drawable button_add_income
+drawable button_limit_alert
 drawable button_statistics
 drawable design_fab_background
 drawable design_ic_visibility
@@ -3101,9 +3102,11 @@ id bottom
 id bounce
 id btnAddExpense
 id btnAddIncome
+id btnLimit
 id btnStatistics
 id btn_back
 id btn_delete
+id btn_filter
 id btn_save_expense
 id btn_save_income
 id buttonPanel
@@ -3115,6 +3118,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id chart_bar
 id checkbox
 id checked
 id chronometer
@@ -3225,6 +3229,8 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layout_expense
+id layout_income
 id left
 id leftToRight
 id legacy
@@ -3394,7 +3400,9 @@ id snapMargins
 id spacer
 id special_effects_controller_view_tag
 id spinner_category
+id spinner_month
 id spinner_source
+id spinner_year
 id spline
 id split_action_bar
 id spread
@@ -3410,7 +3418,6 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
-id statisticsLayout
 id stop
 id stretch
 id submenuarrow
@@ -3431,15 +3438,11 @@ id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id text
 id text2
-id textBalance
 id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textTotalExpense
-id textTotalIncome
-id textViewTitle
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3470,6 +3473,7 @@ id transition_transform
 id triangle
 id txt_amount
 id txt_category
+id txt_profit
 id txt_source
 id txt_timestamp
 id txt_total_expense

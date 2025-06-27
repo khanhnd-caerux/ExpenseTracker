@@ -4,7 +4,10 @@ package com.example.expensetracker.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,38 +20,46 @@ import java.lang.String;
 
 public final class ActivityStatisticsBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
-  public final LinearLayout statisticsLayout;
+  public final Button btnBack;
 
   @NonNull
-  public final TextView textBalance;
+  public final Button btnFilter;
 
   @NonNull
-  public final TextView textTotalExpense;
+  public final LinearLayout layoutExpense;
 
   @NonNull
-  public final TextView textTotalIncome;
+  public final LinearLayout layoutIncome;
 
   @NonNull
-  public final TextView textViewTitle;
+  public final Spinner spinnerMonth;
 
-  private ActivityStatisticsBinding(@NonNull LinearLayout rootView,
-      @NonNull LinearLayout statisticsLayout, @NonNull TextView textBalance,
-      @NonNull TextView textTotalExpense, @NonNull TextView textTotalIncome,
-      @NonNull TextView textViewTitle) {
+  @NonNull
+  public final Spinner spinnerYear;
+
+  @NonNull
+  public final TextView txtProfit;
+
+  private ActivityStatisticsBinding(@NonNull ScrollView rootView, @NonNull Button btnBack,
+      @NonNull Button btnFilter, @NonNull LinearLayout layoutExpense,
+      @NonNull LinearLayout layoutIncome, @NonNull Spinner spinnerMonth,
+      @NonNull Spinner spinnerYear, @NonNull TextView txtProfit) {
     this.rootView = rootView;
-    this.statisticsLayout = statisticsLayout;
-    this.textBalance = textBalance;
-    this.textTotalExpense = textTotalExpense;
-    this.textTotalIncome = textTotalIncome;
-    this.textViewTitle = textViewTitle;
+    this.btnBack = btnBack;
+    this.btnFilter = btnFilter;
+    this.layoutExpense = layoutExpense;
+    this.layoutIncome = layoutIncome;
+    this.spinnerMonth = spinnerMonth;
+    this.spinnerYear = spinnerYear;
+    this.txtProfit = txtProfit;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -73,34 +84,50 @@ public final class ActivityStatisticsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      LinearLayout statisticsLayout = (LinearLayout) rootView;
-
-      id = R.id.textBalance;
-      TextView textBalance = ViewBindings.findChildViewById(rootView, id);
-      if (textBalance == null) {
+      id = R.id.btn_back;
+      Button btnBack = ViewBindings.findChildViewById(rootView, id);
+      if (btnBack == null) {
         break missingId;
       }
 
-      id = R.id.textTotalExpense;
-      TextView textTotalExpense = ViewBindings.findChildViewById(rootView, id);
-      if (textTotalExpense == null) {
+      id = R.id.btn_filter;
+      Button btnFilter = ViewBindings.findChildViewById(rootView, id);
+      if (btnFilter == null) {
         break missingId;
       }
 
-      id = R.id.textTotalIncome;
-      TextView textTotalIncome = ViewBindings.findChildViewById(rootView, id);
-      if (textTotalIncome == null) {
+      id = R.id.layout_expense;
+      LinearLayout layoutExpense = ViewBindings.findChildViewById(rootView, id);
+      if (layoutExpense == null) {
         break missingId;
       }
 
-      id = R.id.textViewTitle;
-      TextView textViewTitle = ViewBindings.findChildViewById(rootView, id);
-      if (textViewTitle == null) {
+      id = R.id.layout_income;
+      LinearLayout layoutIncome = ViewBindings.findChildViewById(rootView, id);
+      if (layoutIncome == null) {
         break missingId;
       }
 
-      return new ActivityStatisticsBinding((LinearLayout) rootView, statisticsLayout, textBalance,
-          textTotalExpense, textTotalIncome, textViewTitle);
+      id = R.id.spinner_month;
+      Spinner spinnerMonth = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerMonth == null) {
+        break missingId;
+      }
+
+      id = R.id.spinner_year;
+      Spinner spinnerYear = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerYear == null) {
+        break missingId;
+      }
+
+      id = R.id.txt_profit;
+      TextView txtProfit = ViewBindings.findChildViewById(rootView, id);
+      if (txtProfit == null) {
+        break missingId;
+      }
+
+      return new ActivityStatisticsBinding((ScrollView) rootView, btnBack, btnFilter, layoutExpense,
+          layoutIncome, spinnerMonth, spinnerYear, txtProfit);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

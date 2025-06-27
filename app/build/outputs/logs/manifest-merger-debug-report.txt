@@ -42,6 +42,7 @@ MERGED from [androidx.room:room-ktx:2.6.1] /Users/duykhanhnguyen/.gradle/caches/
 MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/a303cc391d279afa9ac4c9df7517a228/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/8fb49637664cc16e603a2ba795d45db2/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/bbc2131a0c3136e221dd9e63cc522404/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.PhilJay:MPAndroidChart:3.1.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ee2e9630aa238f088d2dc7e41488c74a/transformed/jetified-MPAndroidChart-3.1.0/AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/edba09b01365c7c9ea5574bafadaa7e4/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/78b5b892f558aea3a7a203774b431b0c/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/65ab3cff37fa5e17f3a26857fd134067/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -207,6 +208,8 @@ MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/duykhanhnguyen/.gradle/caches/
 MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/8fb49637664cc16e603a2ba795d45db2/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/bbc2131a0c3136e221dd9e63cc522404/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/bbc2131a0c3136e221dd9e63cc522404/transformed/jetified-annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.github.PhilJay:MPAndroidChart:3.1.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ee2e9630aa238f088d2dc7e41488c74a/transformed/jetified-MPAndroidChart-3.1.0/AndroidManifest.xml:16:5-18:41
+MERGED from [com.github.PhilJay:MPAndroidChart:3.1.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ee2e9630aa238f088d2dc7e41488c74a/transformed/jetified-MPAndroidChart-3.1.0/AndroidManifest.xml:16:5-18:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/edba09b01365c7c9ea5574bafadaa7e4/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/edba09b01365c7c9ea5574bafadaa7e4/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/78b5b892f558aea3a7a203774b431b0c/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
