@@ -8,148 +8,331 @@
 8        android:minSdkVersion="21"
 9        android:targetSdkVersion="34" />
 10
-11    <permission
-11-->[androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/11ef473876795a650fac33009c8af4ab/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.expensetracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/11ef473876795a650fac33009c8af4ab/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/11ef473876795a650fac33009c8af4ab/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
-14
-15    <uses-permission android:name="com.example.expensetracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/11ef473876795a650fac33009c8af4ab/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/11ef473876795a650fac33009c8af4ab/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
-16
-17    <application
-17-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:4:5-34:19
-18        android:allowBackup="true"
-18-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:5:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/11ef473876795a650fac33009c8af4ab/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
-20        android:debuggable="true"
-21        android:extractNativeLibs="true"
-22        android:label="Quản Lý Chi Tiêu"
-22-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:6:9-41
-23        android:supportsRtl="true"
-23-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:7:9-35
-24        android:testOnly="true" >
-25
-26        <!-- Màn hình chính -->
-27        <activity
-27-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:10:9-17:20
-28            android:name="com.example.expensetracker.ui.MainActivity"
-28-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:11:13-44
-29            android:exported="true" > <!-- PHẢI có nếu có intent-filter -->
-29-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:12:13-36
-30            <intent-filter>
-30-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:13:13-16:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:14:17-69
-31-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:14:25-66
+11    <!-- Permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:5:5-67
+12-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+13-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:6:5-77
+13-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:6:22-74
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:22:5-79
+14-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:22:22-76
+15    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+15-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:24:5-68
+15-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:24:22-65
+16    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+16-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:26:5-82
+16-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:26:22-79
+17
+18    <permission
+18-->[androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5654818e737e4900372dd4d04894462a/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+19        android:name="com.example.expensetracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+19-->[androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5654818e737e4900372dd4d04894462a/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+20        android:protectionLevel="signature" />
+20-->[androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5654818e737e4900372dd4d04894462a/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+21
+22    <uses-permission android:name="com.example.expensetracker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+22-->[androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5654818e737e4900372dd4d04894462a/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+22-->[androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5654818e737e4900372dd4d04894462a/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+23
+24    <application
+24-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:8:5-47:19
+25        android:allowBackup="true"
+25-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:9:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5654818e737e4900372dd4d04894462a/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+27        android:debuggable="true"
+28        android:extractNativeLibs="true"
+29        android:label="Quản Lý Chi Tiêu"
+29-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:10:9-41
+30        android:supportsRtl="true"
+30-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:11:9-35
+31        android:testOnly="true" >
 32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:15:17-77
-33-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:15:27-74
-34            </intent-filter>
-35        </activity>
-36
-37        <!-- Màn hình thêm doanh thu -->
-38        <activity
-38-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:20:9-22:40
-39            android:name="com.example.expensetracker.ui.AddIncomeActivity"
-39-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:21:13-49
-40            android:exported="false" />
-40-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:22:13-37
+33        <!-- Firebase Messaging Service -->
+34        <service
+34-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:14:9-20:19
+35            android:name="com.example.expensetracker.notification.MyFirebaseMessagingService"
+35-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:15:13-68
+36            android:exported="false" >
+36-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:16:13-37
+37            <intent-filter>
+37-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:17:13-19:29
+38                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+38-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:18:17-77
+38-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:18:25-75
+39            </intent-filter>
+40        </service>
 41
-42        <!-- Màn hình thêm chi tiêu -->
+42        <!-- Màn hình chính -->
 43        <activity
-43-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:25:9-27:40
-44            android:name="com.example.expensetracker.ui.AddExpenseActivity"
-44-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:26:13-50
-45            android:exported="false" />
-45-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:27:13-37
-46
-47        <!-- Màn hình xem thống kê -->
-48        <activity
-48-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:30:9-32:40
-49            android:name="com.example.expensetracker.ui.StatisticsActivity"
-49-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:31:13-50
-50            android:exported="false" />
-50-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:32:13-37
-51
-52        <provider
-52-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/e3bb547c2bb126ce9a5fcc354a8a7b0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-53            android:name="androidx.startup.InitializationProvider"
-53-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/e3bb547c2bb126ce9a5fcc354a8a7b0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-54            android:authorities="com.example.expensetracker.androidx-startup"
-54-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/e3bb547c2bb126ce9a5fcc354a8a7b0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-55            android:exported="false" >
-55-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/e3bb547c2bb126ce9a5fcc354a8a7b0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-56            <meta-data
-56-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/e3bb547c2bb126ce9a5fcc354a8a7b0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-57-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/e3bb547c2bb126ce9a5fcc354a8a7b0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-58                android:value="androidx.startup" />
-58-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/e3bb547c2bb126ce9a5fcc354a8a7b0e/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-59            <meta-data
-59-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-3/30478f7311dda49324eced8b81abf04e/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-60-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-3/30478f7311dda49324eced8b81abf04e/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-61                android:value="androidx.startup" />
-61-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-3/30478f7311dda49324eced8b81abf04e/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
-62            <meta-data
-62-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-63                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-63-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-64                android:value="androidx.startup" />
-64-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-65        </provider>
-66
-67        <service
-67-->[androidx.room:room-runtime:2.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-3/fec1f52b01fc09266e62b73bc7286527/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
-68            android:name="androidx.room.MultiInstanceInvalidationService"
-68-->[androidx.room:room-runtime:2.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-3/fec1f52b01fc09266e62b73bc7286527/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
-69            android:directBootAware="true"
-69-->[androidx.room:room-runtime:2.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-3/fec1f52b01fc09266e62b73bc7286527/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
-70            android:exported="false" />
-70-->[androidx.room:room-runtime:2.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-3/fec1f52b01fc09266e62b73bc7286527/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
-71
-72        <receiver
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-73            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-73-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-74            android:directBootAware="false"
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-75            android:enabled="true"
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-76            android:exported="true"
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-77            android:permission="android.permission.DUMP" >
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-78            <intent-filter>
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-79                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-80            </intent-filter>
-81            <intent-filter>
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-82                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-83            </intent-filter>
-84            <intent-filter>
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-85                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-86            </intent-filter>
-87            <intent-filter>
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-88                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-3/ec58d573dd97f9c25731b562f40bc4dd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-89            </intent-filter>
-90        </receiver>
-91    </application>
-92
-93</manifest>
+43-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:23:9-30:20
+44            android:name="com.example.expensetracker.ui.MainActivity"
+44-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:24:13-44
+45            android:exported="true" >
+45-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:25:13-36
+46            <intent-filter>
+46-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:26:13-29:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:27:17-69
+47-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:27:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:28:17-77
+49-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:28:27-74
+50            </intent-filter>
+51        </activity>
+52
+53        <!-- Màn hình thêm doanh thu -->
+54        <activity
+54-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:33:9-35:40
+55            android:name="com.example.expensetracker.ui.AddIncomeActivity"
+55-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:34:13-49
+56            android:exported="false" />
+56-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:35:13-37
+57
+58        <!-- Màn hình thêm chi tiêu -->
+59        <activity
+59-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:38:9-40:40
+60            android:name="com.example.expensetracker.ui.AddExpenseActivity"
+60-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:39:13-50
+61            android:exported="false" />
+61-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:40:13-37
+62
+63        <!-- Màn hình xem thống kê -->
+64        <activity
+64-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:43:9-45:40
+65            android:name="com.example.expensetracker.ui.StatisticsActivity"
+65-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:44:13-50
+66            android:exported="false" />
+66-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:45:13-37
+67
+68        <receiver
+68-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:29:9-40:20
+69            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+69-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:30:13-78
+70            android:exported="true"
+70-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:31:13-36
+71            android:permission="com.google.android.c2dm.permission.SEND" >
+71-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:32:13-73
+72            <intent-filter>
+72-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:33:13-35:29
+73                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+73-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:34:17-81
+73-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:34:25-78
+74            </intent-filter>
+75
+76            <meta-data
+76-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:37:13-39:40
+77                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+77-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:38:17-92
+78                android:value="true" />
+78-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:39:17-37
+79        </receiver>
+80        <!--
+81             FirebaseMessagingService performs security checks at runtime,
+82             but set to not exported to explicitly avoid allowing another app to call it.
+83        -->
+84        <service
+84-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:46:9-53:19
+85            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+85-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:47:13-82
+86            android:directBootAware="true"
+86-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:48:13-43
+87            android:exported="false" >
+87-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:49:13-37
+88            <intent-filter android:priority="-500" >
+88-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:17:13-19:29
+89                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+89-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:18:17-77
+89-->/Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:18:25-75
+90            </intent-filter>
+91        </service>
+92        <service
+92-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:54:9-63:19
+93            android:name="com.google.firebase.components.ComponentDiscoveryService"
+93-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:55:13-84
+94            android:directBootAware="true"
+94-->[com.google.firebase:firebase-common:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/de7ec0aeaa4b9ed85bc1df048a4ce99e/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+95            android:exported="false" >
+95-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:56:13-37
+96            <meta-data
+96-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:57:13-59:85
+97                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+97-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:58:17-122
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:59:17-82
+99            <meta-data
+99-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:60:13-62:85
+100                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+100-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:61:17-119
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:62:17-82
+102            <meta-data
+102-->[com.google.firebase:firebase-installations:17.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/cf15462d74142ccd3079277508c476a2/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:15:13-17:85
+103                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+103-->[com.google.firebase:firebase-installations:17.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/cf15462d74142ccd3079277508c476a2/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:16:17-130
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.firebase:firebase-installations:17.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/cf15462d74142ccd3079277508c476a2/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:17:17-82
+105            <meta-data
+105-->[com.google.firebase:firebase-installations:17.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/cf15462d74142ccd3079277508c476a2/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:18:13-20:85
+106                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+106-->[com.google.firebase:firebase-installations:17.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/cf15462d74142ccd3079277508c476a2/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:19:17-127
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[com.google.firebase:firebase-installations:17.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/cf15462d74142ccd3079277508c476a2/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:20:17-82
+108            <meta-data
+108-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/e2169b5b943a44c5cea85c8efb3f3a7e/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+109                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+109-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/e2169b5b943a44c5cea85c8efb3f3a7e/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/e2169b5b943a44c5cea85c8efb3f3a7e/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+111            <meta-data
+111-->[com.google.firebase:firebase-common:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/de7ec0aeaa4b9ed85bc1df048a4ce99e/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+112                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+112-->[com.google.firebase:firebase-common:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/de7ec0aeaa4b9ed85bc1df048a4ce99e/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-common:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/de7ec0aeaa4b9ed85bc1df048a4ce99e/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/ce259de946ebc00843c68798cb7bd8ae/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
+115                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+115-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/ce259de946ebc00843c68798cb7bd8ae/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/ce259de946ebc00843c68798cb7bd8ae/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
+117        </service>
+118
+119        <activity
+119-->[com.google.android.gms:play-services-base:18.0.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/0db2bc18e027b9fce07e0c148bf302dc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+120            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+120-->[com.google.android.gms:play-services-base:18.0.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/0db2bc18e027b9fce07e0c148bf302dc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+121            android:exported="false"
+121-->[com.google.android.gms:play-services-base:18.0.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/0db2bc18e027b9fce07e0c148bf302dc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+122            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+122-->[com.google.android.gms:play-services-base:18.0.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/0db2bc18e027b9fce07e0c148bf302dc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+123
+124        <provider
+124-->[com.google.firebase:firebase-common:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/de7ec0aeaa4b9ed85bc1df048a4ce99e/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+125            android:name="com.google.firebase.provider.FirebaseInitProvider"
+125-->[com.google.firebase:firebase-common:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/de7ec0aeaa4b9ed85bc1df048a4ce99e/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+126            android:authorities="com.example.expensetracker.firebaseinitprovider"
+126-->[com.google.firebase:firebase-common:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/de7ec0aeaa4b9ed85bc1df048a4ce99e/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+127            android:directBootAware="true"
+127-->[com.google.firebase:firebase-common:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/de7ec0aeaa4b9ed85bc1df048a4ce99e/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+128            android:exported="false"
+128-->[com.google.firebase:firebase-common:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/de7ec0aeaa4b9ed85bc1df048a4ce99e/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+129            android:initOrder="100" />
+129-->[com.google.firebase:firebase-common:21.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/de7ec0aeaa4b9ed85bc1df048a4ce99e/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+130
+131        <service
+131-->[androidx.room:room-runtime:2.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/1b00b8edfa56026701c23d50ee265f6f/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+132            android:name="androidx.room.MultiInstanceInvalidationService"
+132-->[androidx.room:room-runtime:2.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/1b00b8edfa56026701c23d50ee265f6f/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+133            android:directBootAware="true"
+133-->[androidx.room:room-runtime:2.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/1b00b8edfa56026701c23d50ee265f6f/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+134            android:exported="false" />
+134-->[androidx.room:room-runtime:2.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/1b00b8edfa56026701c23d50ee265f6f/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+135
+136        <provider
+136-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4e925b4337b46ae2a72e6c7ba0dbdc56/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+137            android:name="androidx.startup.InitializationProvider"
+137-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4e925b4337b46ae2a72e6c7ba0dbdc56/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+138            android:authorities="com.example.expensetracker.androidx-startup"
+138-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4e925b4337b46ae2a72e6c7ba0dbdc56/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+139            android:exported="false" >
+139-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4e925b4337b46ae2a72e6c7ba0dbdc56/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+140            <meta-data
+140-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4e925b4337b46ae2a72e6c7ba0dbdc56/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+141                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+141-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4e925b4337b46ae2a72e6c7ba0dbdc56/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+142                android:value="androidx.startup" />
+142-->[androidx.emoji2:emoji2:1.2.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4e925b4337b46ae2a72e6c7ba0dbdc56/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+143            <meta-data
+143-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/c8f7abf61ede01e8cd8287035885f1f7/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+144                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+144-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/c8f7abf61ede01e8cd8287035885f1f7/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+145                android:value="androidx.startup" />
+145-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/c8f7abf61ede01e8cd8287035885f1f7/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+146            <meta-data
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+147                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+148                android:value="androidx.startup" />
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+149        </provider>
+150
+151        <meta-data
+151-->[com.google.android.gms:play-services-basement:18.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/6b28382ac4d9bc4467cf73af1177a60f/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+152            android:name="com.google.android.gms.version"
+152-->[com.google.android.gms:play-services-basement:18.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/6b28382ac4d9bc4467cf73af1177a60f/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+153            android:value="@integer/google_play_services_version" />
+153-->[com.google.android.gms:play-services-basement:18.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/6b28382ac4d9bc4467cf73af1177a60f/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+154
+155        <service
+155-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/687adb06c762a20f4cf216ea3e35022d/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+156            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+156-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/687adb06c762a20f4cf216ea3e35022d/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+157            android:exported="false" >
+157-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/687adb06c762a20f4cf216ea3e35022d/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+158            <meta-data
+158-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/687adb06c762a20f4cf216ea3e35022d/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+159                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+159-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/687adb06c762a20f4cf216ea3e35022d/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+160                android:value="cct" />
+160-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/687adb06c762a20f4cf216ea3e35022d/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+161        </service>
+162        <service
+162-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4d30cae681a6b5ebd54c04dfe0a4232b/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+163            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+163-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4d30cae681a6b5ebd54c04dfe0a4232b/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+164            android:exported="false"
+164-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4d30cae681a6b5ebd54c04dfe0a4232b/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+165            android:permission="android.permission.BIND_JOB_SERVICE" >
+165-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4d30cae681a6b5ebd54c04dfe0a4232b/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+166        </service>
+167
+168        <receiver
+168-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4d30cae681a6b5ebd54c04dfe0a4232b/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+169            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+169-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4d30cae681a6b5ebd54c04dfe0a4232b/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+170            android:exported="false" />
+170-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4d30cae681a6b5ebd54c04dfe0a4232b/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+171        <receiver
+171-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+172            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+172-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+173            android:directBootAware="false"
+173-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+174            android:enabled="true"
+174-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+175            android:exported="true"
+175-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+176            android:permission="android.permission.DUMP" >
+176-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+177            <intent-filter>
+177-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+178                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+178-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+178-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+179            </intent-filter>
+180            <intent-filter>
+180-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+181                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+182            </intent-filter>
+183            <intent-filter>
+183-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+184                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+185            </intent-filter>
+186            <intent-filter>
+186-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+187                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/7157a8595e01ef2b286b6feee12ba1bd/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+188            </intent-filter>
+189        </receiver>
+190    </application>
+191
+192</manifest>

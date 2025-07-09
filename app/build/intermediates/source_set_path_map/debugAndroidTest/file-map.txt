@@ -1,4 +1,0 @@
-com.example.expensetracker.test.app-androidTest-0 /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/build/generated/res/resValues/androidTest/debug
-com.example.expensetracker.test.app-mergeDebugAndroidTestResources-1 /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.example.expensetracker.test.app-mergeDebugAndroidTestResources-2 /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.example.expensetracker.test.app-merged_res-3 /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/build/intermediates/merged_res/debugAndroidTest

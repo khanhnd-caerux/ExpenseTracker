@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DDDDDD"
+    android:padding="12dp">
+
+    <!-- Thời gian -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Thời gian"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <!-- Danh mục -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Nguồn thu"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <!-- Số tiền -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Số tiền (VND)"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <!-- Xoá -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Xoá"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+</LinearLayout>

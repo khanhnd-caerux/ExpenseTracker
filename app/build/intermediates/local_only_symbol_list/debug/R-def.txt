@@ -7,6 +7,7 @@ drawable button_add_expense
 drawable button_add_income
 drawable button_limit_alert
 drawable button_statistics
+drawable ic_notification
 id btnAddExpense
 id btnAddIncome
 id btnLimit
@@ -47,4 +48,10 @@ layout item_income
 layout item_income_header
 menu drawer_menu
 string app_name
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
+string project_id
 style Theme.AppCompat.Light.NoActionBar

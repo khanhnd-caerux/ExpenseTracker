@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.expensetracker.app-mergeDebugResources-36:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
+            "outputFile": "com.example.expensetracker.app-mergeDebugResources-41:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/duykhanhnguyen/.gradle/caches/transforms-3/84c92507bee9bd439f211ef532cb7f53/transformed/material-1.12.0/res/values-w400dp-port-v13/values-w400dp-port-v13.xml",
+                    "source": "/Users/duykhanhnguyen/.gradle/caches/transforms-4/2d76ecff2e1022f1ad293abe2d998b81/transformed/material-1.12.0/res/values-w400dp-port-v13/values-w400dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

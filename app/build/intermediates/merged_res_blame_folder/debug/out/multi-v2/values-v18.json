@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.expensetracker.app-mergeDebugResources-36:/values-v18/values-v18.xml",
+            "outputFile": "com.example.expensetracker.app-mergeDebugResources-41:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "/Users/duykhanhnguyen/.gradle/caches/transforms-3/e742929aa2d0066c9e23d8a77ceb0a3d/transformed/appcompat-1.6.1/res/values-v18/values-v18.xml",
+                    "source": "/Users/duykhanhnguyen/.gradle/caches/transforms-4/c5fd19c2d77dce78f416a229ec327bd1/transformed/appcompat-1.6.1/res/values-v18/values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
