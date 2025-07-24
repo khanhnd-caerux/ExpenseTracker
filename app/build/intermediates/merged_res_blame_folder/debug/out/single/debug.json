@@ -1,62 +1,98 @@
 [
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/menu_drawer_menu.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/menu/drawer_menu.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/drawable_circle_background.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/drawable/circle_background.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/drawable_ic_notification.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/drawable/ic_notification.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_activity_add_income.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/activity_add_income.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/drawable_button_add_expense.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/drawable/button_add_expense.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/drawable_button_add_expense.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/drawable/button_add_expense.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/layout_activity_add_income.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/layout/activity_add_income.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/drawable_button_statistics.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/drawable/button_statistics.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/drawable_button_statistics.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/drawable/button_statistics.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_item_income.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/item_income.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/layout_item_expense_header.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/layout/item_expense_header.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_activity_main.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/layout_item_income.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/layout/item_income.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_item_expense.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/item_expense.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/drawable_button_limit_alert.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/drawable/button_limit_alert.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_item_income_header.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/item_income_header.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/layout_activity_main.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/layout/activity_main.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/drawable_border_box.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/drawable/border_box.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/drawable_button_add_income.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/drawable/button_add_income.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_item_expense_header.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/item_expense_header.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/layout_item_expense.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/layout/item_expense.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_activity_onboarding.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/activity_onboarding.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/layout_activity_statistics.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/layout/activity_statistics.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/drawable_button_limit_alert.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/drawable/button_limit_alert.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/layout_activity_add_expense.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/layout/activity_add_expense.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/drawable_ic_user_placeholder.jpeg.flat",
+        "source": "com.example.expensetracker.app-main-46:/drawable/ic_user_placeholder.jpeg"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/layout_item_income_header.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/layout/item_income_header.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_activity_login.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/activity_login.xml"
     },
     {
-        "merged": "com.example.expensetracker.app-merged_res-43:/drawable_border_box.xml.flat",
-        "source": "com.example.expensetracker.app-main-45:/drawable/border_box.xml"
+        "merged": "com.example.expensetracker.app-merged_res-44:/menu_drawer_menu.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/menu/drawer_menu.xml"
+    },
+    {
+        "merged": "com.example.expensetracker.app-merged_res-44:/drawable_button_add_income.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/drawable/button_add_income.xml"
+    },
+    {
+        "merged": "com.example.expensetracker.app-merged_res-44:/drawable_ic_chart.png.flat",
+        "source": "com.example.expensetracker.app-main-46:/drawable/ic_chart.png"
+    },
+    {
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_activity_add_expense.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/activity_add_expense.xml"
+    },
+    {
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_activity_with_drawer.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/activity_with_drawer.xml"
+    },
+    {
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_activity_user_info.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/activity_user_info.xml"
+    },
+    {
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_item_onboarding.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/item_onboarding.xml"
+    },
+    {
+        "merged": "com.example.expensetracker.app-merged_res-44:/drawable_ic_money.png.flat",
+        "source": "com.example.expensetracker.app-main-46:/drawable/ic_money.png"
+    },
+    {
+        "merged": "com.example.expensetracker.app-merged_res-44:/drawable_ic_notification.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/drawable/ic_notification.xml"
+    },
+    {
+        "merged": "com.example.expensetracker.app-merged_res-44:/layout_activity_statistics.xml.flat",
+        "source": "com.example.expensetracker.app-main-46:/layout/activity_statistics.xml"
     }
 ]

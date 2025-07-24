@@ -22,7 +22,7 @@ import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.coroutines.*
 
-class MainActivity : ComponentActivity() {
+class MainActivity : BaseActivity() {
     private lateinit var chart: BarChart
 
     override fun onCreate(savedInstanceState: Bundle?) {

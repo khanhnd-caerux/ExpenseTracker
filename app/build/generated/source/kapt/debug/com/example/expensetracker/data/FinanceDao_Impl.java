@@ -37,6 +37,8 @@ public final class FinanceDao_Impl implements FinanceDao {
 
   private final EntityInsertionAdapter<Expense> __insertionAdapterOfExpense;
 
+  private final EntityInsertionAdapter<User> __insertionAdapterOfUser;
+
   private final EntityDeletionOrUpdateAdapter<Income> __deletionAdapterOfIncome;
 
   private final EntityDeletionOrUpdateAdapter<Expense> __deletionAdapterOfExpense;
@@ -81,6 +83,39 @@ public final class FinanceDao_Impl implements FinanceDao {
         }
         statement.bindDouble(3, entity.getAmount());
         statement.bindLong(4, entity.getDate());
+      }
+    };
+    this.__insertionAdapterOfUser = new EntityInsertionAdapter<User>(__db) {
+      @Override
+      @NonNull
+      protected String createQuery() {
+        return "INSERT OR REPLACE INTO `user` (`id`,`fullName`,`email`,`phone`,`birthDate`) VALUES (?,?,?,?,?)";
+      }
+
+      @Override
+      protected void bind(@NonNull final SupportSQLiteStatement statement,
+          @NonNull final User entity) {
+        statement.bindLong(1, entity.getId());
+        if (entity.getFullName() == null) {
+          statement.bindNull(2);
+        } else {
+          statement.bindString(2, entity.getFullName());
+        }
+        if (entity.getEmail() == null) {
+          statement.bindNull(3);
+        } else {
+          statement.bindString(3, entity.getEmail());
+        }
+        if (entity.getPhone() == null) {
+          statement.bindNull(4);
+        } else {
+          statement.bindString(4, entity.getPhone());
+        }
+        if (entity.getBirthDate() == null) {
+          statement.bindNull(5);
+        } else {
+          statement.bindString(5, entity.getBirthDate());
+        }
       }
     };
     this.__deletionAdapterOfIncome = new EntityDeletionOrUpdateAdapter<Income>(__db) {
@@ -145,6 +180,18 @@ public final class FinanceDao_Impl implements FinanceDao {
         }
       }
     }, $completion);
+  }
+
+  @Override
+  public void insertUser(final User user) {
+    __db.assertNotSuspendingTransaction();
+    __db.beginTransaction();
+    try {
+      __insertionAdapterOfUser.insert(user);
+      __db.setTransactionSuccessful();
+    } finally {
+      __db.endTransaction();
+    }
   }
 
   @Override
@@ -425,6 +472,57 @@ public final class FinanceDao_Impl implements FinanceDao {
         _statement.release();
       }
     });
+  }
+
+  @Override
+  public User getUser() {
+    final String _sql = "SELECT * FROM user WHERE id = 0 LIMIT 1";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+      final int _cursorIndexOfFullName = CursorUtil.getColumnIndexOrThrow(_cursor, "fullName");
+      final int _cursorIndexOfEmail = CursorUtil.getColumnIndexOrThrow(_cursor, "email");
+      final int _cursorIndexOfPhone = CursorUtil.getColumnIndexOrThrow(_cursor, "phone");
+      final int _cursorIndexOfBirthDate = CursorUtil.getColumnIndexOrThrow(_cursor, "birthDate");
+      final User _result;
+      if (_cursor.moveToFirst()) {
+        final int _tmpId;
+        _tmpId = _cursor.getInt(_cursorIndexOfId);
+        final String _tmpFullName;
+        if (_cursor.isNull(_cursorIndexOfFullName)) {
+          _tmpFullName = null;
+        } else {
+          _tmpFullName = _cursor.getString(_cursorIndexOfFullName);
+        }
+        final String _tmpEmail;
+        if (_cursor.isNull(_cursorIndexOfEmail)) {
+          _tmpEmail = null;
+        } else {
+          _tmpEmail = _cursor.getString(_cursorIndexOfEmail);
+        }
+        final String _tmpPhone;
+        if (_cursor.isNull(_cursorIndexOfPhone)) {
+          _tmpPhone = null;
+        } else {
+          _tmpPhone = _cursor.getString(_cursorIndexOfPhone);
+        }
+        final String _tmpBirthDate;
+        if (_cursor.isNull(_cursorIndexOfBirthDate)) {
+          _tmpBirthDate = null;
+        } else {
+          _tmpBirthDate = _cursor.getString(_cursorIndexOfBirthDate);
+        }
+        _result = new User(_tmpId,_tmpFullName,_tmpEmail,_tmpPhone,_tmpBirthDate);
+      } else {
+        _result = null;
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
   }
 
   @NonNull

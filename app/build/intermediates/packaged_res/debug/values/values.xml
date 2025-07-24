@@ -17,7 +17,21 @@
     <string name="google_app_id" translatable="false">1:53241882528:android:6ccf18f8d436d4030066c5</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC66Nijt1Ri2uRWBKPWJej4Sd2bbpDnl6Q</string>
     <string name="google_storage_bucket" translatable="false">expensetrackerapp-61b71.firebasestorage.app</string>
+    <string name="navigation_drawer_close">Đóng menu</string>
+    <string name="navigation_drawer_open">Mở menu</string>
     <string name="project_id" translatable="false">expensetrackerapp-61b71</string>
-    <style name="Theme.AppCompat.Light.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="LabelStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+    <style name="Theme.ExpenseTracker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="ValueStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

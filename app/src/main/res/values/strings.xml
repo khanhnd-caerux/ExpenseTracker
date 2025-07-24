@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Quản Lý Chi Tiêu</string>
+    <string name="navigation_drawer_open">Mở menu</string>
+    <string name="navigation_drawer_close">Đóng menu</string>
     <string-array name="category_list">
         <item>Ăn uống</item>
         <item>Giải trí</item>

@@ -37,4 +37,10 @@ interface FinanceDao {
 
     @Query("SELECT SUM(amount) FROM expense_table")
     fun getTotalExpenses(): LiveData<Double>
+
+    @Query("SELECT * FROM user WHERE id = 0 LIMIT 1")
+    fun getUser(): User?
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertUser(user: User)
 }

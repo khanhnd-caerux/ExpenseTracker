@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.expensetracker.app-mergeDebugResources-41:/values-hr/values-hr.xml",
+            "outputFile": "com.example.expensetracker.app-mergeDebugResources-42:/values-hr/values-hr.xml",
             "map": [
                 {
                     "source": "/Users/duykhanhnguyen/.gradle/caches/transforms-4/2d76ecff2e1022f1ad293abe2d998b81/transformed/material-1.12.0/res/values-hr/values-hr.xml",

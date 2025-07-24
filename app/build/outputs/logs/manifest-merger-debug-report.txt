@@ -1,13 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-49:12
-INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-49:12
-INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-49:12
-INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-49:12
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:1:1-52:12
 MERGED from [androidx.databinding:viewbinding:8.2.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/fdf01ec1c025e2996107d99136134090/transformed/jetified-viewbinding-8.2.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/2d76ecff2e1022f1ad293abe2d998b81/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5d4ba76761d347ba67a60499e46644ea/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/1bee4637e30558cb413158a9ab4ff5fa/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/c2fe8d0d52c7acb6e9e2ad870374573a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/c5fd19c2d77dce78f416a229ec327bd1/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/e4d950419073c80c4b45d1fec255d00c/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:17:1-66:12
@@ -49,6 +49,7 @@ MERGED from [androidx.customview:customview:1.1.0] /Users/duykhanhnguyen/.gradle
 MERGED from [androidx.core:core-ktx:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/75c2657ca8820dd8185708f56b8474a0/transformed/jetified-core-ktx-1.13.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5654818e737e4900372dd4d04894462a/transformed/core-1.13.0/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/194cc8abb73c060230d90ab40a7ae2c3/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/3d4c9ddc17cbb98fcf7f0d8f63465758/transformed/jetified-lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/b08383a89b021fe5000aff7543e70596/transformed/jetified-lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/3d3880a408c0a8e482dc050896e5d5f4/transformed/jetified-lifecycle-livedata-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/ea211efb13cdc60b24a148bddf650db0/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
@@ -98,12 +99,12 @@ MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguye
 	android:name
 		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:6:22-74
 application
-ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:8:5-47:19
-INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:8:5-47:19
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:8:5-50:19
+INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:8:5-50:19
 MERGED from [com.google.android.material:material:1.12.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/2d76ecff2e1022f1ad293abe2d998b81/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/2d76ecff2e1022f1ad293abe2d998b81/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/c2fe8d0d52c7acb6e9e2ad870374573a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/c2fe8d0d52c7acb6e9e2ad870374573a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5d4ba76761d347ba67a60499e46644ea/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5d4ba76761d347ba67a60499e46644ea/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:28:5-64:19
 MERGED from [com.google.firebase:firebase-messaging:24.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/4203cc59a66a3b5321793011fc13ff3f/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:28:5-64:19
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/0db2bc18e027b9fce07e0c148bf302dc/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
@@ -149,29 +150,31 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/duykhanhnguyen/.grad
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5654818e737e4900372dd4d04894462a/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:12:9-35
 	android:label
 		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:10:9-41
 	android:allowBackup
 		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:11:9-52
 service#com.example.expensetracker.notification.MyFirebaseMessagingService
-ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:14:9-20:19
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:15:9-21:19
 	android:exported
-		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:16:13-37
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:15:13-68
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:16:13-68
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:17:13-19:29
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:18:13-20:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:18:25-75
-activity#com.example.expensetracker.ui.MainActivity
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:19:25-75
+activity#com.example.expensetracker.ui.OnboardingActivity
 ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:23:9-30:20
 	android:exported
 		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:24:13-44
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:24:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:26:13-29:29
 action#android.intent.action.MAIN
@@ -182,24 +185,42 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
 		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:28:27-74
+activity#com.example.expensetracker.ui.MainActivity
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:33:9-78
+	android:exported
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:33:51-75
+	android:name
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:33:19-50
 activity#com.example.expensetracker.ui.AddIncomeActivity
-ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:33:9-35:40
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:36:9-83
 	android:exported
-		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:35:13-37
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:36:56-80
 	android:name
-		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:34:13-49
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:36:19-55
 activity#com.example.expensetracker.ui.AddExpenseActivity
-ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:38:9-40:40
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:39:9-84
 	android:exported
-		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:40:13-37
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:39:57-81
 	android:name
-		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:39:13-50
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:39:19-56
 activity#com.example.expensetracker.ui.StatisticsActivity
-ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:43:9-45:40
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:42:9-84
 	android:exported
-		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:45:13-37
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:42:57-81
 	android:name
-		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:44:13-50
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:42:19-56
+activity#com.example.expensetracker.ui.UserInfoActivity
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:45:9-82
+	android:exported
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:45:55-79
+	android:name
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:45:19-54
+activity#com.example.expensetracker.ui.LoginActivity
+ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:48:9-78
+	android:exported
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:48:52-76
+	android:name
+		ADDED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml:48:19-51
 uses-sdk
 INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/duykhanhnguyen/Downloads/ExpenseTrackerApp/app/src/main/AndroidManifest.xml
@@ -208,10 +229,10 @@ MERGED from [androidx.databinding:viewbinding:8.2.1] /Users/duykhanhnguyen/.grad
 MERGED from [androidx.databinding:viewbinding:8.2.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/fdf01ec1c025e2996107d99136134090/transformed/jetified-viewbinding-8.2.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.material:material:1.12.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/2d76ecff2e1022f1ad293abe2d998b81/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.12.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/2d76ecff2e1022f1ad293abe2d998b81/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5d4ba76761d347ba67a60499e46644ea/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5d4ba76761d347ba67a60499e46644ea/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/1bee4637e30558cb413158a9ab4ff5fa/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/1bee4637e30558cb413158a9ab4ff5fa/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/c2fe8d0d52c7acb6e9e2ad870374573a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/c2fe8d0d52c7acb6e9e2ad870374573a/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/c5fd19c2d77dce78f416a229ec327bd1/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/duykhanhnguyen/.gradle/caches/transforms-4/c5fd19c2d77dce78f416a229ec327bd1/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/e4d950419073c80c4b45d1fec255d00c/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
@@ -294,6 +315,8 @@ MERGED from [androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/tra
 MERGED from [androidx.core:core:1.13.0] /Users/duykhanhnguyen/.gradle/caches/transforms-4/5654818e737e4900372dd4d04894462a/transformed/core-1.13.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/194cc8abb73c060230d90ab40a7ae2c3/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/194cc8abb73c060230d90ab40a7ae2c3/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/3d4c9ddc17cbb98fcf7f0d8f63465758/transformed/jetified-lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/3d4c9ddc17cbb98fcf7f0d8f63465758/transformed/jetified-lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/b08383a89b021fe5000aff7543e70596/transformed/jetified-lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/b08383a89b021fe5000aff7543e70596/transformed/jetified-lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.2] /Users/duykhanhnguyen/.gradle/caches/transforms-4/3d3880a408c0a8e482dc050896e5d5f4/transformed/jetified-lifecycle-livedata-ktx-2.6.2/AndroidManifest.xml:20:5-44

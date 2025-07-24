@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.expensetracker.app-mergeDebugResources-41:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "com.example.expensetracker.app-mergeDebugResources-42:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
                     "source": "/Users/duykhanhnguyen/.gradle/caches/transforms-4/c5fd19c2d77dce78f416a229ec327bd1/transformed/appcompat-1.6.1/res/values-ldltr-v21/values-ldltr-v21.xml",

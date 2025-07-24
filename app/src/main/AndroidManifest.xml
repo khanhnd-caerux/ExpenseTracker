@@ -8,6 +8,7 @@
     <application
         android:allowBackup="true"
         android:label="Quản Lý Chi Tiêu"
+        android:theme="@style/Theme.ExpenseTracker"
         android:supportsRtl="true">
 
         <!-- Firebase Messaging Service -->
@@ -18,10 +19,9 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
-        
-        <!-- Màn hình chính -->
+
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.OnboardingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,21 +29,24 @@
             </intent-filter>
         </activity>
 
+        <!-- Màn hình chính -->
+        <activity android:name=".ui.MainActivity" android:exported="false" />
+
         <!-- Màn hình thêm doanh thu -->
-        <activity
-            android:name=".ui.AddIncomeActivity"
-            android:exported="false" />
+        <activity android:name=".ui.AddIncomeActivity" android:exported="false" />
 
         <!-- Màn hình thêm chi tiêu -->
-        <activity
-            android:name=".ui.AddExpenseActivity"
-            android:exported="false" />
+        <activity android:name=".ui.AddExpenseActivity" android:exported="false" />
 
         <!-- Màn hình xem thống kê -->
-        <activity
-            android:name=".ui.StatisticsActivity"
-            android:exported="false" />
-        
+        <activity android:name=".ui.StatisticsActivity" android:exported="false" />
+
+        <!-- Màn hình User Info -->
+        <activity android:name=".ui.UserInfoActivity" android:exported="false" />
+
+        <!-- Màn hình Login -->
+        <activity android:name=".ui.LoginActivity" android:exported="false"/>
+
     </application>
 
 </manifest>
